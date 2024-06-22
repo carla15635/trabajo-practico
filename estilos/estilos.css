@@ -26,6 +26,8 @@ gap: 1em;
   grid-template-rows:50px auto ;
   gap: 1em;
  
+
+
 }
 .container2 div{
  
@@ -103,6 +105,16 @@ h2 {
     font-style: normal;
     -webkit-text-stroke: 0.5px whitesmoke;;
     }
+  h6{
+     padding: 10px;
+      color: rgb(39, 25, 8);
+      text-align: left;
+    font-size: large;
+      font-family: "Poetsen One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      
+    }
   
   p {
     color:rgb(22, 19, 18,);
@@ -135,7 +147,9 @@ h2 {
 
 img {
   margin: 20px; 
+  border:solid 2px burlywood;
 }
+
 
 form{
   text-align: center;
@@ -161,30 +175,55 @@ form label {
   font-weight: bold; /* Texto en negrita */
 }
 
-a title {
-  padding: 20px; 
-  margin: 20px;
-  border: 20px solid none;
-  text-align: center;
-}
+
 
 footer {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  background-color: rgb(240, 153, 125);
-  opacity: 0.9;
-  background-size: 30px 30px ;
-  background-position: 0 0,16px 16px;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  width:auto ;
+  height: 200px;
+background-color:darksalmon
+ 
+  
+}
+section  {
+  display: inline-block;
+   width:400px ;
+  height:200px;
+ 
 }
 
-h6 footer {
-  text-align: center;
+.icono1{
+    padding: 20px; 
+    margin-left:200px ;
+   
 }
+.icono2{
+  padding: 20px; 
+  margin-left:200px ;
+
+
+}
+h6 footer {
+ text-align: left;
+ margin:10px ;
+}
+
 @media (max-width:500px) {
+   .grid-container {
+    display: block;
+   .grid-template-columns:120 px 200 px;
+   grid-template-rows: 200px ;
+   }
+   .container2 {
+    display: block;
+   color: #b44e25;
+    grid-template-columns:650px 500px ;
+    grid-template-rows:50px auto ;
+    gap: 1em;
+   
+  
+  
+  }
+   
   .menu ul li {
     display: flex;
     flex-direction: column;
@@ -195,7 +234,7 @@ h6 footer {
     border:solid 1px cornsilk ;
   }
   header nav {
-    width: 250px;
+    width: 380px;
     height: 210px;
     text-align: center;
     background-color: rgb(240, 153, 125);
@@ -206,7 +245,24 @@ h6 footer {
     height: 100px;
     text-align: center;
   }
+  footer{
+    width: auto;
+   height: 300px;
+
+  }
+  section  {
+     width:500px ;
+    height:100px;
 }
+.icono1{
+  padding: 5px; 
+  margin-left:30px ;
+}
+
+  .icono2{
+    padding: 5px; 
+    margin-left:30px ;}
+
 @media (min-width:1300px) {
 .menu ul {
   width: 1200px;
@@ -214,4 +270,5 @@ display: inline-block;
 text-align: center;
 background-color: rgb(240, 153, 125) ; 
 }
+
 }
